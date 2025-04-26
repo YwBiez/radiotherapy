@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radiotherapy Patient Journey | رحلة مريض العلاج الإشعاعي</title>
+    <link rel="icon" type="image" href="/images/Logo.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('/api/placeholder/1200/800') center/cover;
+            direction: ltr;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            width: 40px;
+            height: 40px;
+        }
+
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        .user-icons {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .user-icon,
+        .soon-icon {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .soon-icon {
+            background-color: #4CAF50;
+        }
+
+        .user-icon img,
+        .soon-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .nav-menu {
+            display: flex;
+            padding: 10px 0;
+            background-color: #f0f8ff;
+            overflow-x: auto;
+            white-space: nowrap;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .nav-item {
+            flex: 1;
+            margin: 0 5px;
+            text-align: center;
+        }
+
+        .nav-link {
+            display: block;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 14px;
+            color: #333;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .nav-link:hover {
+            background-color: #e0e0e0;
+            color: #0066cc;
+        }
+
+        .nav-link.active {
+            background-color: #0066cc;
+            color: white;
+        }
+
+        .content {
+            padding: 30px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .consultation-section {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: rgba(240, 248, 255, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-ar {
+            direction: rtl;
+            text-align: right;
+        }
+
+        .card-title {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+
+        .doctor-patient {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+
+        .footer {
+            background-color: #f8f9fa;
+            padding: 15px;
+            text-align: center;
+            margin-top: 30px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                padding: 5px 0;
+            }
+
+            .nav-item {
+                margin: 0 2px;
+            }
+
+            .nav-link {
+                padding: 5px 8px;
+                font-size: 12px;
+            }
+
+            .card {
+                padding: 15px;
+            }
+
+            .card-title {
+                font-size: 20px;
+            }
+        }
+
+        .blue-bg {
+            background: linear-gradient(rgba(173, 216, 230, 0.7), rgba(135, 206, 235, 0.7)), url('/api/placeholder/1200/400') center/cover;
+            padding: 40px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div>
+            <a href="index.html">
+                <img src="images/Logo.png" alt="Logo" class="logo">
+            </a>
+        </div>
+        <div class="title">Radiotherapy Patient Journey | رحلة مريض العلاج الإشعاعي</div>
+        <div class="user-icons">
+            <div class="user-icon">
+                <a href="aboutus.html">
+                    <img src="/images/image 4.png" alt="User">
+                </a>
+            </div>
+        </div>
+    </header>
+    <nav class="nav-menu">
+        <div class="nav-item">
+            <a href="consultation.html" class="nav-link">Consultation | الاستشارة</a>
+        </div>
+        <div class="nav-item">
+            <a href="simulation.html" class="nav-link">Simulation | جلسة المحاكاة</a>
+        </div>
+        <div class="nav-item">
+            <a href="planning.html" class="nav-link">Planning | تخطيط العلاج</a>
+        </div>
+        <div class="nav-item">
+            <a href="treatment.html" class="nav-link">Treatment | جلسات العلاج</a>
+        </div>
+        <div class="nav-item">
+            <a href="followup.html" class="nav-link">Follow-up | المتابعة والدعم</a>
+        </div>
+        <div class="nav-item">
+            <a href="explainer.html" class="nav-link">Explainer video | فيديو توضيحي</a>
+        </div>
+        <div class="nav-item">
+            <a href="future.html" class="nav-link">Future plans | خطط مستقبلية</a>
+        </div>
+    </nav>
+
+    <div class="blue-bg">
+        <div class="content consultation-section">
+            <div class="card card-ar">
+                <h2 class="card-title">جلسة محاكاة</h2>
+                <p>جلسة المحاكاة هي الخطوة التي يتم فيها تحديد الوضعية المثالية لجسمك أثناء تلقي العلاج
+                    . يتم استخدام جهاز الأشعة المقطعية (CT) لتحديد المنطقة المستهدفة بدقة. قد يتم وضع
+                    علامات صغيرة على جلدك للمساعدة في تكرار الوضع في
+                    كل جلسة علاج لاحقة. الجلسة غير مؤلمة ولا تتضمن العلاج الفعلي.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2 class="card-title">Simulation</h2>
+                <p>The simulation session defines the ideal body position for receiving treatment. A CT
+                    scanner is used to precisely locate the treatment area. Small skin marks may be
+                    applied to ensure consistent positioning in each future session.
+                    The process is painless and does not involve actual radiation.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <img src="/images/simulation1.webp" alt="Doctor consulting with patient" class="doctor-patient">
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 كلية العلوم الطبية التطبيقية - قسم الأشعة | Faculty of Applied Medical Sciences - Radiology Dept.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

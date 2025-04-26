@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radiotherapy Patient Journey | رحلة مريض العلاج الإشعاعي</title>
+    <link rel="icon" type="image" href="/images/Logo.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), 
+                        url('/api/placeholder/1200/800') center/cover no-repeat;
+        }
+        
+        .logo {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 10px 0;
+            color: #333;
+            position: relative;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 5px 0;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .nav-item {
+            padding: 8px 15px;
+            margin: 0 5px;
+            background-color: #f0f8ff;
+            border-radius: 20px;
+            font-size: 14px;
+            cursor: pointer;
+            color: #333;
+        }
+        
+        .main-content {
+            background-color: rgba(173, 216, 230, 0.4);
+            border-radius: 15px;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 100, 0.1);
+        }
+        
+        .about-section h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 36px;
+            color: #222;
+        }
+        
+        .team-member {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .member-avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 20px;
+            border: 3px solid white;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .member-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .member-info {
+            flex: 1;
+        }
+        
+        .member-info p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+        
+        .member-info p:first-child {
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        .medical-icons {
+            margin-top: 40px;
+            text-align: center;
+        }
+        
+        .medical-icons img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: contain;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background-color: rgba(173, 216, 230, 0.3);
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            .team-member {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .member-avatar {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html">
+                <img src="images/Logo.png" alt="Logo" class="logo">
+            </a>
+        </div>
+        <h1>Radiotherapy Patient Journey | رحلة مريض العلاج الإشعاعي</h1>
+    </header>
+    
+
+    
+    <div class="main-content">
+        <div class="about-section">
+            <h1>About Us</h1>
+            
+            <div class="team-member">
+                <div class="member-avatar">
+                    <img src="/images/Bader.jpg" alt="Badr khalid alqahtani">
+                </div>
+                <div class="member-info">
+                    <p>Name: Badr khalid alqahtani</p>
+                    <p>ID: 2236642</p>
+                    <p>Email: Balqahtani0080@stu.kau.edu.sa</p>
+                </div>
+            </div>
+            
+            <div class="team-member">
+                <div class="member-avatar">
+                    <img src="/images/ibrahim.jpg" alt="Ibrahim Abutalib Alsaid">
+                </div>
+                <div class="member-info">
+                    <p>Name: Ibrahim Abutalib Alsaid</p>
+                    <p>ID: 2143864</p>
+                    <p>Email: ihadialsaid@stu.kau.edu.sa</p>
+                </div>
+            </div>
+            
+            <div class="team-member">
+                <div class="member-avatar">
+                    <img src="/images/body.jpg" alt="Abdullah maulla alhobishy">
+                </div>
+                <div class="member-info">
+                    <p>Name: Abdullah maulla alhobishy</p>
+                    <p>ID: 2045009</p>
+                    <p>Email: aaalhobishe@stu.kau.edu.sa</p>
+                </div>
+            </div>
+            
+            <div class="team-member">
+                <div class="member-avatar">
+                    <img src="/images/Mo.png" alt="Mohammed turki Alkhudhari">
+                </div>
+                <div class="member-info">
+                    <p>Name: Mohammed turki Alkhudhari</p>
+                    <p>ID: 1537248</p>
+                    <p>Email: Malkhodari0002@stu.kau.edu.sa</p>
+                </div>
+            </div>
+            
+            <div class="team-member">
+                <div class="member-avatar">
+                    <img src="/images/faris.jpg" alt="Feras ahmed alsalhi">
+                </div>
+                <div class="member-info">
+                    <p>Name: Feras ahmed alsalhi</p>
+                    <p>ID: 2139365</p>
+                    <p>Email: Ferasalsalhi16@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    <footer>
+        © 2025 Faculty of Applied Medical Sciences - Radiology Dept | كلية العلوم الطبية التطبيقية - قسم الأشعة
+    </footer>
+</body>
+</html>
